@@ -11,6 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
+using System.Media;
 
 namespace While_Loop_Summative
 {
@@ -60,6 +61,9 @@ namespace While_Loop_Summative
                 formGraphics.DrawEllipse(circlePen, 233, 240, 25, 25);
                 formGraphics.FillRectangle(blackBrush, 240, 239, 15, 10);
             }
+
+            SoundPlayer player = new SoundPlayer(Properties.Resources.airstrike);
+            player.Play();
 
             //drop bomb
             while (y < 230)
@@ -125,7 +129,10 @@ namespace While_Loop_Summative
                 Thread.Sleep(5);
             }
 
-            formGraphics.DrawString("Good Luck!", secondFont, briefingBrush, 200, 290);
+            player = new SoundPlayer(Properties.Resources.Explosion);
+            player.Play();
+
+            formGraphics.DrawString("Good Luck!", secondFont, briefingBrush, 200, 310);
             Thread.Sleep(500);
         }
 
