@@ -77,5 +77,15 @@ namespace While_Loop_Summative.Properties {
                 return ResourceManager.GetStream("Explosion", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap starwars {
+            get {
+                object obj = ResourceManager.GetObject("starwars", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

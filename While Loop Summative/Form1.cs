@@ -40,6 +40,8 @@ namespace While_Loop_Summative
             int x = this.Width - 100;
             int y = 20;
 
+            pictureBox1.Visible = false;
+
             formGraphics.DrawString("Mission Briefing", drawFont, briefingBrush, 20, 40);
             Thread.Sleep(500);
             formGraphics.DrawString("You will navigate fighter jet to the Death \nStar to drop a bomb through the exhaust \nport in an attempt to destroy the Death \nStar.", drawFont, drawBrush, 20, 100);
